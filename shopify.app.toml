@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "Auto-seo-button"
+client_id = "ad5f0586dbebe4d53bc85235b7068fba"
+application_url = "https://apartments-conspiracy-tt-isa.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://apartments-conspiracy-tt-isa.trycloudflare.com/auth/callback",
+  "https://apartments-conspiracy-tt-isa.trycloudflare.com/auth/shopify/callback",
+  "https://apartments-conspiracy-tt-isa.trycloudflare.com/api/auth/callback",
+  "https://apartments-conspiracy-tt-isa.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "autoseo2.myshopify.com"
